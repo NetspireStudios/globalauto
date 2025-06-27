@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import { Droplets } from 'lucide-react'
 import ServicePageTemplate from '../../../components/ServicePageTemplate'
 
 const OilChangePage = () => {
@@ -50,7 +49,7 @@ const OilChangePage = () => {
   return (
     <ServicePageTemplate
       serviceName="Synthetic Oil Change"
-      icon={Droplets}
+      iconName="droplets"
       price="$79.99"
       duration="30 min"
       warranty="24 mo"

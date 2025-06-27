@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import { Shield } from 'lucide-react'
 import ServicePageTemplate from '../../../components/ServicePageTemplate'
 
 const BrakeRepairPage = () => {
@@ -50,7 +49,7 @@ const BrakeRepairPage = () => {
   return (
     <ServicePageTemplate
       serviceName="Brake Repair & Service"
-      icon={Shield}
+      iconName="shield"
       price="$149.99"
       duration="90 min"
       warranty="Lifetime"

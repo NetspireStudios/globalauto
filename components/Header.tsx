@@ -55,13 +55,20 @@ const Header = () => {
   ]
 
   const handleNavClick = (href: string) => {
-    if (href.startsWith('#')) {
-      const element = document.querySelector(href)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
-      }
-    }
     setIsMenuOpen(false)
+    
+    if (href.startsWith('#')) {
+      // Small delay to allow menu to close first
+      setTimeout(() => {
+        const element = document.querySelector(href)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 100)
+    } else {
+      // For external links, navigate immediately
+      window.location.href = href
+    }
   }
 
   return (

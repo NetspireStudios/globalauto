@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowLeft, CheckCircle, Clock, DollarSign, Shield, Star, Phone, Mail } from 'lucide-react'
+import { ArrowLeft, CheckCircle, Clock, DollarSign, Shield, Star, Phone, Mail, Circle, Zap, Settings, Car, Gauge, AlertTriangle, Droplets } from 'lucide-react'
 import Link from 'next/link'
 
 interface ServiceFeature {
@@ -16,7 +16,7 @@ interface ServiceIncluded {
 
 interface ServicePageTemplateProps {
   serviceName: string
-  icon: React.ComponentType<any>
+  iconName: string
   price: string
   duration: string
   warranty: string
@@ -32,7 +32,7 @@ interface ServicePageTemplateProps {
 
 const ServicePageTemplate = ({
   serviceName,
-  icon: Icon,
+  iconName,
   price,
   duration,
   warranty,
@@ -45,6 +45,21 @@ const ServicePageTemplate = ({
   ctaTitle = "Ready to Book Your Service?",
   ctaDescription = "Don't wait until it's too late. Schedule your service today and keep your vehicle running like new."
 }: ServicePageTemplateProps) => {
+  
+  // Map icon names to components
+  const iconMap: Record<string, React.ComponentType<any>> = {
+    'circle': Circle,
+    'zap': Zap,
+    'settings': Settings,
+    'car': Car,
+    'check-circle': CheckCircle,
+    'gauge': Gauge,
+    'shield': Shield,
+    'alert-triangle': AlertTriangle,
+    'droplets': Droplets
+  }
+  
+  const Icon = iconMap[iconName] || Settings
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-primary-50">
