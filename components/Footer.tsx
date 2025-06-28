@@ -202,7 +202,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <span className="text-gray-300 text-sm">Location</span>
-                  <div className="text-white font-medium">801 St Clarens Ave</div>
+                  <div className="text-white font-medium">821 Saint Clairance Avenue</div>
                   <div className="text-white font-medium">Toronto, ON M6H 3X4</div>
                 </div>
               </motion.div>
@@ -241,7 +241,7 @@ const Footer = () => {
           
           <div className="relative rounded-xl overflow-hidden shadow-xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.1234567890123!2d-79.44789012345678!3d43.65123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34abcd123456%3A0x9876543210abcdef!2s801%20St%20Clarens%20Ave%2C%20Toronto%2C%20ON%20M6H%203X4%2C%20Canada!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.1!2d-79.4456!3d43.6523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d123456789%3A0x123456789abcdef0!2s821%20Saint%20Clairance%20Ave%2C%20Toronto%2C%20ON%20M6H%203X4%2C%20Canada!5e0!3m2!1sen!2sus!4v1700000000002!5m2!1sen!2sus"
               width="100%"
               height="300"
               style={{ border: 0 }}

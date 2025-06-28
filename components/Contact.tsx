@@ -47,7 +47,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-navy-900 mb-2">Visit Us</h3>
-                <p className="text-navy-600 mb-1">801 St Clarens Ave</p>
+                <p className="text-navy-600 mb-1">821 Saint Clairance Avenue</p>
                 <p className="text-navy-600">Toronto, ON M6H 3X4, Canada</p>
               </div>
             </div>

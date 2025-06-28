@@ -201,7 +201,7 @@ Customer Reviews:
 
 Contact Methods:
 - **Phone**: (416) 533-3433 with emergency availability
-- **Address**: 801 St Clarens Ave, Toronto, ON M6H 3X4, Canada
+- **Address**: 821 Saint Clairance Avenue, Toronto, ON M6H 3X4, Canada
 - **Hours**: Monday-Friday 9AM-7PM, Saturday 9AM-6PM, Sunday Closed
 - **Email**: info@globalautotoronto.ca
 - **Contact Form**: Name, email, phone, message with validation styling
