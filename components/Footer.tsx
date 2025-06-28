@@ -63,7 +63,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Your trusted automotive repair center in Mississauga with over 60 years of honest, 
+              Your trusted automotive repair center in Toronto with over 60 years of honest, 
               friendly service. We care about your car like it's our own.
             </p>
             <div className="flex space-x-3">
@@ -174,7 +174,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <span className="text-gray-300 text-sm">Call Us</span>
-                  <div className="text-white font-medium">(905) 281-9054</div>
+                  <div className="text-white font-medium">(416) 533-3433</div>
                 </div>
               </motion.div>
               
@@ -188,7 +188,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <span className="text-gray-300 text-sm">Email Us</span>
-                  <div className="text-white font-medium text-sm">info@globalautorepairmississauga.ca</div>
+                  <div className="text-white font-medium text-sm">info@globalautotoronto.ca</div>
                 </div>
               </motion.div>
               
@@ -202,7 +202,8 @@ const Footer = () => {
                 </div>
                 <div>
                   <span className="text-gray-300 text-sm">Location</span>
-                  <div className="text-white font-medium">Mississauga, ON</div>
+                  <div className="text-white font-medium">801 St Clarens Ave</div>
+                  <div className="text-white font-medium">Toronto, ON M6H 3X4</div>
                 </div>
               </motion.div>
               
@@ -234,13 +235,13 @@ const Footer = () => {
           <div className="text-center mb-6">
             <h3 className="text-2xl font-bold text-white mb-2">Visit Our Location</h3>
             <p className="text-gray-300">
-              Find us easily in Mississauga, ON. We're here to serve you!
+              Find us easily in Toronto, ON. We're here to serve you!
             </p>
           </div>
           
           <div className="relative rounded-xl overflow-hidden shadow-xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.57091557695!2d-79.8084!3d43.6532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b469fe76b05b7%3A0x3146423786a3351!2sMississauga%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.1234567890123!2d-79.44789012345678!3d43.65123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34abcd123456%3A0x9876543210abcdef!2s801%20St%20Clarens%20Ave%2C%20Toronto%2C%20ON%20M6H%203X4%2C%20Canada!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
               width="100%"
               height="300"
               style={{ border: 0 }}

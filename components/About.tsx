@@ -36,7 +36,7 @@ const About = () => {
             </h2>
 
             <p className="text-lg text-navy-600 mb-8 leading-relaxed">
-              For over 60 years, Global Auto Repair has been Mississauga's trusted automotive repair center. 
+              For over 60 years, Global Auto Repair has been Toronto's trusted automotive repair center. 
               We pride ourselves on honest service, a friendly environment, and unmatched expertise 
               in automotive care. Our commitment to excellence has made us a cornerstone of the community.
             </p>
@@ -115,7 +115,7 @@ const About = () => {
               Trusted by Thousands of Customers
             </h3>
             <p className="text-primary-100 max-w-2xl mx-auto">
-              Our commitment to excellence has earned us the trust of the Mississauga community for over six decades.
+              Our commitment to excellence has earned us the trust of the Toronto community for over six decades.
             </p>
           </div>
 

@@ -2,8 +2,8 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowLeft, CheckCircle, Clock, DollarSign, Shield, Star, Phone, Mail, Circle, Zap, Settings, Car, Gauge, AlertTriangle, Droplets } from 'lucide-react'
-import Link from 'next/link'
+import { CheckCircle, Clock, DollarSign, Shield, Star, Phone, Mail, Circle, Zap, Settings, Car, Gauge, AlertTriangle, Droplets } from 'lucide-react'
+import Header from './Header'
 
 interface ServiceFeature {
   title: string
@@ -64,37 +64,11 @@ const ServicePageTemplate = ({
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-primary-50">
       {/* Header */}
-      <motion.div 
-        className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-40"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2 text-navy-700 hover:text-primary-600 transition-colors">
-              <ArrowLeft className="h-5 w-5" />
-              <span className="font-medium">Back to Home</span>
-            </Link>
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 text-primary-600" />
-                <span className="text-navy-700 font-medium">(905) 281-9054</span>
-              </div>
-              <motion.button
-                className="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-2 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                Book Now
-              </motion.button>
-            </div>
-          </div>
-        </div>
-      </motion.div>
+      <Header />
 
       {/* Hero Section */}
       <motion.section 
-        className="py-20 relative overflow-hidden"
+        className="pt-24 pb-20 relative overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -275,7 +249,7 @@ const ServicePageTemplate = ({
                 whileTap={{ scale: 0.98 }}
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (905) 281-9054
+                Call (416) 533-3433
               </motion.button>
               <motion.button
                 className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-theme-medium-600 transition-all duration-300 flex items-center justify-center"

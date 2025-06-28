@@ -5,10 +5,10 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Global Auto Repair - Professional Auto Services in Mississauga',
-  description: 'Global Auto Repair provides trusted automotive repair services in Mississauga. Over 60 years of experience in auto maintenance, repairs, and inspections.',
-  keywords: 'auto repair, car service, automotive, Mississauga, brake repair, oil change, tire service',
-  authors: [{ name: 'Hensall Auto' }],
+  title: 'Global Auto Repair - Professional Auto Services in Toronto',
+  description: 'Global Auto Repair provides trusted automotive repair services in Toronto. Over 60 years of experience in auto maintenance, repairs, and inspections.',
+  keywords: 'auto repair, car service, automotive, Toronto, brake repair, oil change, tire service',
+  authors: [{ name: 'Global Auto Repair' }],
 }
 
 export const viewport = {

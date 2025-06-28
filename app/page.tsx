@@ -22,7 +22,7 @@ export default function Home() {
       
       <ParallaxSeparator 
         title="60+ Years of Excellence"
-        subtitle="Serving Mississauga with honest, reliable automotive care since 1964"
+        subtitle="Serving Toronto with honest, reliable automotive care since 1964"
         backgroundImage="https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=90"
         height="h-[32rem]"
       />

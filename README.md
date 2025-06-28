@@ -200,10 +200,10 @@ Customer Reviews:
 **Lines 1-125**: Contact information and form
 
 Contact Methods:
-- **Phone**: (905) 281-9054 with emergency availability
-- **Address**: 469 Hensall Cir, Mississauga, ON L5A 3P4, Canada
-- **Hours**: Mon-Fri 9AM-7PM, Sat 9AM-6PM, Sun Closed
-- **Email**: info@hensallauto.com
+- **Phone**: (416) 533-3433 with emergency availability
+- **Address**: 801 St Clarens Ave, Toronto, ON M6H 3X4, Canada
+- **Hours**: Monday-Friday 9AM-7PM, Saturday 9AM-6PM, Sunday Closed
+- **Email**: info@globalautotoronto.ca
 - **Contact Form**: Name, email, phone, message with validation styling
 
 ### Footer (`components/Footer.tsx`)
@@ -274,4 +274,4 @@ Open [http://localhost:3000](http://localhost:3000) to view the website
 
 ---
 
-**Built with modern web technologies for Hensall Auto - Your trusted automotive repair center in Mississauga since 1964.** 
+**Built with modern web technologies for Global Auto Repair - Your trusted automotive repair center in Toronto since 1964.** 

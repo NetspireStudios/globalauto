@@ -179,7 +179,7 @@ const Hero = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="text-lg text-navy-600 mb-8 max-w-2xl"
             >
-              Global Auto Repair is your trusted automotive repair and used vehicle center in Mississauga. 
+              Global Auto Repair is your trusted automotive repair and used vehicle center in Toronto. 
               We are known for honest service and friendly environment with over 60 years 
               of automotive service experience.
             </motion.p>

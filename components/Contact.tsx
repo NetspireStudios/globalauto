@@ -36,7 +36,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-navy-900 mb-2">Call Us</h3>
-                <p className="text-navy-600 mb-1">(905) 281-9054</p>
+                <p className="text-navy-600 mb-1">(416) 533-3433</p>
                 <p className="text-sm text-navy-500">Emergency calls available</p>
               </div>
             </div>
@@ -47,8 +47,8 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-navy-900 mb-2">Visit Us</h3>
-                <p className="text-navy-600 mb-1">469 Hensall Cir</p>
-                <p className="text-navy-600">Mississauga, ON L5A 3P4, Canada</p>
+                <p className="text-navy-600 mb-1">801 St Clarens Ave</p>
+                <p className="text-navy-600">Toronto, ON M6H 3X4, Canada</p>
               </div>
             </div>
 
@@ -70,7 +70,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-navy-900 mb-2">Email Us</h3>
-                <p className="text-navy-600">info@hensallauto.com</p>
+                <p className="text-navy-600">info@globalautotoronto.ca</p>
               </div>
             </div>
           </motion.div>

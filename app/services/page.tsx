@@ -118,7 +118,7 @@ const ServicesPage = () => {
               <p className="text-sm text-navy-600">Professional automotive repair and maintenance</p>
             </div>
             <div className="flex items-center space-x-4">
-              <span className="text-navy-700 font-medium">(905) 281-9054</span>
+              <span className="text-navy-700 font-medium">(416) 533-3433</span>
               <motion.button
                 className="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-2 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -231,7 +231,7 @@ const ServicesPage = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Call (905) 281-9054
+                Call (416) 533-3433
               </motion.button>
               <motion.button
                 className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-primary-600 transition-all duration-300"

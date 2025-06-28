@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
     {
       icon: MapPin,
       title: 'Convenient Location',
-      description: 'Easy access with ample parking in Mississauga'
+      description: 'Easy access with ample parking in Toronto'
     },
     {
       icon: Calendar,
@@ -125,7 +125,7 @@ const WhyChooseUs = () => {
             Why Choose <span className="text-primary-400 font-medium">Global Auto Repair</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            For over six decades, we've been Mississauga's trusted automotive repair center. 
+            For over six decades, we've been Toronto's trusted automotive repair center. 
             Our commitment to excellence, honest service, and customer satisfaction has made us 
             the go-to choice for thousands of satisfied customers.
           </p>
@@ -260,7 +260,7 @@ const WhyChooseUs = () => {
           </h3>
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
             Join thousands of satisfied customers who trust Global Auto Repair for all their automotive needs. 
-            Book your appointment today and discover why we're Mississauga's #1 choice.
+            Book your appointment today and discover why we're Toronto's #1 choice.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -270,7 +270,7 @@ const WhyChooseUs = () => {
               whileTap={{ scale: 0.98 }}
             >
               <Phone className="h-5 w-5 mr-2" />
-              Call (905) 281-9054
+              Call (416) 533-3433
             </motion.button>
             
             <motion.button

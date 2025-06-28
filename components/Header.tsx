@@ -55,16 +55,25 @@ const Header = () => {
   ]
 
   const handleNavClick = (href: string) => {
+    // Close menu immediately on mobile
     setIsMenuOpen(false)
     
     if (href.startsWith('#')) {
-      // Small delay to allow menu to close first
+      // For anchor links, scroll to section
       setTimeout(() => {
         const element = document.querySelector(href)
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          // Calculate offset to account for fixed header
+          const headerHeight = 80
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
+          const offsetPosition = elementPosition - headerHeight
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          })
         }
-      }, 100)
+      }, 150) // Increased delay for better mobile experience
     } else {
       // For external links, navigate immediately
       window.location.href = href
@@ -187,7 +196,7 @@ const Header = () => {
           <div className="hidden xl:flex items-center space-x-4">
             <div className="flex items-center space-x-1.5 text-sm">
               <Phone className="h-3.5 w-3.5 text-primary-600" />
-              <span className="text-navy-700 font-medium">(905) 281-9054</span>
+              <span className="text-navy-700 font-medium">(416) 533-3433</span>
             </div>
             <motion.button
               onClick={() => handleNavClick('#contact')}
@@ -221,33 +230,34 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-gray-100 shadow-lg"
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="lg:hidden bg-white border-t border-gray-100 shadow-lg max-h-screen overflow-y-auto"
           >
-            <div className="px-4 py-4 space-y-2">
+            <div className="px-4 py-6 space-y-1">
               {navigation.map((item) => (
                 <motion.button
                   key={item.name}
                   onClick={() => handleNavClick(item.href)}
-                  className="flex items-center space-x-2 w-full text-left px-3 py-2 rounded-lg text-navy-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
-                  whileHover={{ x: 5 }}
+                  className="flex items-center space-x-3 w-full text-left px-4 py-4 rounded-xl text-navy-700 hover:bg-primary-50 hover:text-primary-600 transition-all duration-200 active:bg-primary-100"
+                  whileTap={{ scale: 0.98 }}
                 >
-                  <item.icon className="h-4 w-4" />
-                  <span className="text-sm font-medium">{item.name}</span>
+                  <item.icon className="h-5 w-5 text-primary-500" />
+                  <span className="text-base font-medium">{item.name}</span>
                 </motion.button>
               ))}
 
               {/* Mobile Services Dropdown */}
-              <div>
+              <div className="border-t border-gray-100 pt-2">
                 <motion.button
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className="flex items-center justify-between w-full text-left px-3 py-2 rounded-lg text-navy-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
-                  whileHover={{ x: 5 }}
+                  className="flex items-center justify-between w-full text-left px-4 py-4 rounded-xl text-navy-700 hover:bg-primary-50 hover:text-primary-600 transition-all duration-200 active:bg-primary-100"
+                  whileTap={{ scale: 0.98 }}
                 >
-                  <div className="flex items-center space-x-2">
-                    <Settings className="h-4 w-4" />
-                    <span className="text-sm font-medium">Services</span>
+                  <div className="flex items-center space-x-3">
+                    <Settings className="h-5 w-5 text-primary-500" />
+                    <span className="text-base font-medium">Services</span>
                   </div>
-                  <ChevronDown className={`h-3 w-3 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
                 </motion.button>
 
                 <AnimatePresence>
@@ -256,27 +266,28 @@ const Header = () => {
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: 'auto' }}
                       exit={{ opacity: 0, height: 0 }}
-                      className="ml-6 mt-2 space-y-1"
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="ml-6 mt-3 space-y-1 bg-gray-50 rounded-xl p-3"
                     >
                       <Link
                         href="/services"
                         onClick={() => setIsMenuOpen(false)}
-                        className="block px-3 py-2 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
+                        className="block px-3 py-3 text-base font-semibold text-primary-600 hover:text-primary-700 transition-colors rounded-lg hover:bg-white"
                       >
                         View All Services →
                       </Link>
-                      {services.slice(0, 5).map((service) => (
-                        <motion.div key={service.name} whileHover={{ x: 3 }}>
+                      {services.slice(0, 6).map((service) => (
+                        <motion.div key={service.name} whileTap={{ scale: 0.98 }}>
                           <Link
                             href={service.href}
                             onClick={() => setIsMenuOpen(false)}
-                            className="flex items-center justify-between px-3 py-2 text-left text-sm text-navy-600 hover:text-primary-600 transition-colors"
+                            className="flex items-center justify-between px-3 py-3 text-left text-navy-600 hover:text-primary-600 transition-all duration-200 rounded-lg hover:bg-white active:bg-primary-50"
                           >
                             <div className="flex items-center space-x-2">
-                              <service.icon className="h-3 w-3 text-primary-500" />
-                              <span>{service.name}</span>
+                              <service.icon className="h-4 w-4 text-primary-500" />
+                              <span className="text-sm font-medium">{service.name}</span>
                             </div>
-                            <span className="text-xs text-primary-600">{service.price}</span>
+                            <span className="text-xs text-primary-600 font-medium">{service.price}</span>
                           </Link>
                         </motion.div>
                       ))}
@@ -286,14 +297,14 @@ const Header = () => {
               </div>
 
               {/* Mobile Contact Info */}
-              <div className="pt-3 border-t border-gray-100 space-y-3">
-                <div className="flex items-center space-x-2 px-3 text-sm">
-                  <Phone className="h-4 w-4 text-primary-600" />
-                  <span className="text-navy-700 font-medium">(905) 281-9054</span>
+              <div className="pt-4 border-t border-gray-100 space-y-4">
+                <div className="flex items-center space-x-3 px-4 py-3 bg-gray-50 rounded-xl">
+                  <Phone className="h-5 w-5 text-primary-600" />
+                  <span className="text-navy-700 font-semibold text-base">(416) 533-3433</span>
                 </div>
                 <motion.button
                   onClick={() => handleNavClick('#contact')}
-                  className="w-full bg-gradient-to-r from-primary-500 to-primary-600 text-white px-4 py-2.5 rounded-lg font-semibold text-sm shadow-md"
+                  className="w-full bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-4 rounded-xl font-bold text-base shadow-lg active:shadow-md"
                   whileTap={{ scale: 0.98 }}
                 >
                   Book Appointment
